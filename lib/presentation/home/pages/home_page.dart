@@ -3,6 +3,7 @@ import 'package:ecommerce_app/presentation/home/blocs/new_shops_watcher/new_shop
 import 'package:ecommerce_app/presentation/home/blocs/trending_products_watcher/trending_products_watcher_bloc.dart';
 import 'package:ecommerce_app/presentation/home/blocs/trending_sellers_watcher/trending_sellers_fetcher_bloc.dart';
 import 'package:ecommerce_app/presentation/home/widgets/new_shops_widget.dart';
+import 'package:ecommerce_app/presentation/home/widgets/story_fetcher_widgets.dart';
 import 'package:ecommerce_app/presentation/home/widgets/trending_products_widget.dart';
 import 'package:ecommerce_app/presentation/home/widgets/trending_seller_widget.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +30,7 @@ class HomePage extends StatelessWidget {
         ),
       ],
       child: Scaffold(
-        body: const NewShopsWidget(),
+        body: const RestOfTheStoriesWidget(),
       ),
     );
   }
