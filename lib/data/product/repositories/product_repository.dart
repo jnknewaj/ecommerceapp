@@ -21,4 +21,14 @@ class ProductRepository implements IProductRepository {
       return left(const Failures.serverFailure());
     }
   }
+
+  @override
+  Future<Either<Failures, List<Product>>> getNewArraivalProducts() async {
+    try {
+      final productsList = await _remoteDataSource.fetchNewArrivalProducts();
+      return right(productsList);
+    } on ServerException {
+      return left(const Failures.serverFailure());
+    }
+  }
 }
