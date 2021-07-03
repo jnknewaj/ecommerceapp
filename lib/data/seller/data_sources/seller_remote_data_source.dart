@@ -31,18 +31,6 @@ class SellerRemoteDataSource implements ISellerRemoteDataSource {
       final sellers =
           data.map((e) => SellerDto.fromJson(e).toDomain()).toList();
 
-      print('MyResponse: ${dataList.toString()}');
-      print('MyResponseLength: ${dataList.length}');
-      print('MyData: ${data.toString()}');
-      print('MyDataLength: ${data.length}');
-      print('MySellerLength: ${sellers.length}');
-
-      print('-----------------------------------------------------');
-      print('-----------------------------------------------------');
-      print('-----------------------------------------------------');
-
-      print('My Seller At 15 : ${sellers[10].sellerName}');
-
       return sellers;
     } else {
       throw ServerException();

@@ -30,6 +30,7 @@ dependencies:
   http: ^0.13.3
   injectable: ^1.2.2
   json_annotation: ^4.0.1
+  cached_network_image: ^3.0.0
 
 
   # The following adds the Cupertino Icons font to your application.
