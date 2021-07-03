@@ -6,20 +6,6 @@ part of 'seller_dto.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-_$_SellerResponseDto _$_$_SellerResponseDtoFromJson(Map<String, dynamic> json) {
-  return _$_SellerResponseDto(
-    sellers: (json['sellers'] as List<dynamic>)
-        .map((e) => SellerDto.fromJson(e as Map<String, dynamic>))
-        .toList(),
-  );
-}
-
-Map<String, dynamic> _$_$_SellerResponseDtoToJson(
-        _$_SellerResponseDto instance) =>
-    <String, dynamic>{
-      'sellers': instance.sellers,
-    };
-
 _$_SellerDto _$_$_SellerDtoFromJson(Map<String, dynamic> json) {
   return _$_SellerDto(
     slNo: json['slNo'] as String,

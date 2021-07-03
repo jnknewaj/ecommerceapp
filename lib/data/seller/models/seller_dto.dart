@@ -5,31 +5,6 @@ part 'seller_dto.freezed.dart';
 part 'seller_dto.g.dart';
 
 @freezed
-abstract class SellerResponseDto implements _$SellerResponseDto {
-  const SellerResponseDto._();
-  
-  const factory SellerResponseDto({
-    required List<SellerDto> sellers,
-  }) = _SellerResponseDto;
-
-  factory SellerResponseDto.fromDomain(SellerResponse sellerResponse) {
-    return SellerResponseDto(
-      sellers:
-          sellerResponse.sellers.map((e) => SellerDto.fromDomain(e)).toList(),
-    );
-  }
-
-  SellerResponse toDomain() {
-    return SellerResponse(
-      sellers: sellers.map((dto) => dto.toDomain()).toList(),
-    );
-  }
-
-  factory SellerResponseDto.fromJson(Map<String, dynamic> json) =>
-      _$SellerResponseDtoFromJson(json);
-}
-
-@freezed
 abstract class SellerDto implements _$SellerDto {
   const SellerDto._();
 
@@ -71,7 +46,6 @@ abstract class SellerDto implements _$SellerDto {
       division: seller.division,
       subDivision: seller.subDivision,
       city: seller.city,
-      //state: seller.state,
       zipcode: seller.zipcode,
       country: seller.country,
       currencyCode: seller.currencyCode,
@@ -98,7 +72,6 @@ abstract class SellerDto implements _$SellerDto {
       division: division,
       subDivision: subDivision,
       city: city,
-      //state: state,
       zipcode: zipcode,
       country: country,
       currencyCode: currencyCode,

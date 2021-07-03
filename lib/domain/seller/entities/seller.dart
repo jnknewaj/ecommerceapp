@@ -3,13 +3,6 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'seller.freezed.dart';
 
 @freezed
-abstract class SellerResponse with _$SellerResponse{
-  const factory SellerResponse({
-    required List<Seller> sellers,
-  }) = _SellerResponse;
-}
-
-@freezed
 abstract class Seller with _$Seller{
   const factory Seller({
     required String slNo,
