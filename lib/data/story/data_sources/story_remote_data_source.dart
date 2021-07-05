@@ -7,10 +7,14 @@ import 'package:ecommerce_app/domain/story/entities/story.dart';
 import 'package:http/http.dart' as http;
 import 'package:injectable/injectable.dart';
 
-/// Throws [ServerException] is responseCode is other than 200
 abstract class IStoryRemoteDataSource {
+  /// Throws [ServerException] if responseCode is other than 200
   Future<List<Story>> fetchFirstThreeStories();
+
+  /// Throws [ServerException] if responseCode is other than 200
   Future<List<Story>> fetchNextThreeStories();
+
+  /// Throws [ServerException] if responseCode is other than 200
   Future<List<Story>> fetchRestOfTheStories();
 }
 
@@ -53,7 +57,7 @@ class StoryRemoteDataSource implements IStoryRemoteDataSource {
   }
 
   Future<List<Story>> _fetchStories(StoryQuery storyQuery) async {
-    final url = baseUrl + 'stories';
+    final url = '${baseUrl}stories';
     final response = await client.get(Uri.parse(url));
     if (response.statusCode == 200) {
       final List dataList = json.decode(response.body);

@@ -65,10 +65,15 @@ class TrendingSellerWidget extends StatelessWidget {
                     );
                   },
                   failedToLoad: (f) {
-                    return Text(
-                      f.failures.map(
-                        serverFailure: (_) => 'Server Error',
-                        unexpectedFailure: (_) => 'Unexpected Error',
+                    return Center(
+                      child: Text(
+                        f.failures.map(
+                          serverFailure: (f) => mapFailuresToMessage(f),
+                          networkFailure: (f) => mapFailuresToMessage(f),
+                          cacheFailure: (f) => mapFailuresToMessage(f),
+                          unexpectedFailure: (f) => mapFailuresToMessage(f),
+                        ),
+                        style: const TextStyle(color: Colors.red),
                       ),
                     );
                   },

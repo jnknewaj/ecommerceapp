@@ -7,8 +7,8 @@ import 'package:ecommerce_app/domain/shop/entities/shop.dart';
 import 'package:injectable/injectable.dart';
 import 'package:http/http.dart' as http;
 
-/// Throws [ServerException] is responseCode is other than 200
 abstract class IShopRemoteDataSource {
+  /// Throws [ServerException] if responseCode is other than 200
   Future<List<Shop>> fetchNewShops();
 }
 

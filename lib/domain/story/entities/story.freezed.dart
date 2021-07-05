@@ -17,30 +17,30 @@ class _$StoryTearOff {
   const _$StoryTearOff();
 
   _Story call(
-      {required String storyTime,
-      required String story,
-      required String storyType,
-      required String storyImage,
-      required String? storyAdditionalImages,
-      required String promoImage,
-      required int orderQty,
-      required String lastAddToCart,
-      required int availableStock,
-      required String myId,
-      required String ezShopName,
-      required String? companyName,
-      required String? companyLogo,
-      required String? companyEmail,
-      required String currencyCode,
-      required int unitPrice,
-      required int discountAmount,
-      required int discountPercent,
-      required String iMyID,
-      required String shopName,
-      required String shopLogo,
-      required String shopLink,
-      required String friendlyTimeDiff,
-      required String slNo}) {
+      {@HiveField(0) required String storyTime,
+      @HiveField(1) required String story,
+      @HiveField(2) required String storyType,
+      @HiveField(3) required String storyImage,
+      @HiveField(4) required String? storyAdditionalImages,
+      @HiveField(5) required String promoImage,
+      @HiveField(6) required int orderQty,
+      @HiveField(7) required String lastAddToCart,
+      @HiveField(8) required int availableStock,
+      @HiveField(9) required String myId,
+      @HiveField(10) required String ezShopName,
+      @HiveField(11) required String? companyName,
+      @HiveField(12) required String? companyLogo,
+      @HiveField(13) required String? companyEmail,
+      @HiveField(14) required String currencyCode,
+      @HiveField(15) required int unitPrice,
+      @HiveField(16) required int discountAmount,
+      @HiveField(17) required int discountPercent,
+      @HiveField(18) required String iMyID,
+      @HiveField(19) required String shopName,
+      @HiveField(20) required String shopLogo,
+      @HiveField(21) required String shopLink,
+      @HiveField(22) required String friendlyTimeDiff,
+      @HiveField(23) required String slNo}) {
     return _Story(
       storyTime: storyTime,
       story: story,
@@ -75,29 +75,53 @@ const $Story = _$StoryTearOff();
 
 /// @nodoc
 mixin _$Story {
+  @HiveField(0)
   String get storyTime => throw _privateConstructorUsedError;
+  @HiveField(1)
   String get story => throw _privateConstructorUsedError;
+  @HiveField(2)
   String get storyType => throw _privateConstructorUsedError;
+  @HiveField(3)
   String get storyImage => throw _privateConstructorUsedError;
+  @HiveField(4)
   String? get storyAdditionalImages => throw _privateConstructorUsedError;
+  @HiveField(5)
   String get promoImage => throw _privateConstructorUsedError;
+  @HiveField(6)
   int get orderQty => throw _privateConstructorUsedError;
+  @HiveField(7)
   String get lastAddToCart => throw _privateConstructorUsedError;
+  @HiveField(8)
   int get availableStock => throw _privateConstructorUsedError;
+  @HiveField(9)
   String get myId => throw _privateConstructorUsedError;
+  @HiveField(10)
   String get ezShopName => throw _privateConstructorUsedError;
+  @HiveField(11)
   String? get companyName => throw _privateConstructorUsedError;
+  @HiveField(12)
   String? get companyLogo => throw _privateConstructorUsedError;
+  @HiveField(13)
   String? get companyEmail => throw _privateConstructorUsedError;
+  @HiveField(14)
   String get currencyCode => throw _privateConstructorUsedError;
+  @HiveField(15)
   int get unitPrice => throw _privateConstructorUsedError;
+  @HiveField(16)
   int get discountAmount => throw _privateConstructorUsedError;
+  @HiveField(17)
   int get discountPercent => throw _privateConstructorUsedError;
+  @HiveField(18)
   String get iMyID => throw _privateConstructorUsedError;
+  @HiveField(19)
   String get shopName => throw _privateConstructorUsedError;
+  @HiveField(20)
   String get shopLogo => throw _privateConstructorUsedError;
+  @HiveField(21)
   String get shopLink => throw _privateConstructorUsedError;
+  @HiveField(22)
   String get friendlyTimeDiff => throw _privateConstructorUsedError;
+  @HiveField(23)
   String get slNo => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
@@ -109,30 +133,30 @@ abstract class $StoryCopyWith<$Res> {
   factory $StoryCopyWith(Story value, $Res Function(Story) then) =
       _$StoryCopyWithImpl<$Res>;
   $Res call(
-      {String storyTime,
-      String story,
-      String storyType,
-      String storyImage,
-      String? storyAdditionalImages,
-      String promoImage,
-      int orderQty,
-      String lastAddToCart,
-      int availableStock,
-      String myId,
-      String ezShopName,
-      String? companyName,
-      String? companyLogo,
-      String? companyEmail,
-      String currencyCode,
-      int unitPrice,
-      int discountAmount,
-      int discountPercent,
-      String iMyID,
-      String shopName,
-      String shopLogo,
-      String shopLink,
-      String friendlyTimeDiff,
-      String slNo});
+      {@HiveField(0) String storyTime,
+      @HiveField(1) String story,
+      @HiveField(2) String storyType,
+      @HiveField(3) String storyImage,
+      @HiveField(4) String? storyAdditionalImages,
+      @HiveField(5) String promoImage,
+      @HiveField(6) int orderQty,
+      @HiveField(7) String lastAddToCart,
+      @HiveField(8) int availableStock,
+      @HiveField(9) String myId,
+      @HiveField(10) String ezShopName,
+      @HiveField(11) String? companyName,
+      @HiveField(12) String? companyLogo,
+      @HiveField(13) String? companyEmail,
+      @HiveField(14) String currencyCode,
+      @HiveField(15) int unitPrice,
+      @HiveField(16) int discountAmount,
+      @HiveField(17) int discountPercent,
+      @HiveField(18) String iMyID,
+      @HiveField(19) String shopName,
+      @HiveField(20) String shopLogo,
+      @HiveField(21) String shopLink,
+      @HiveField(22) String friendlyTimeDiff,
+      @HiveField(23) String slNo});
 }
 
 /// @nodoc
@@ -277,30 +301,30 @@ abstract class _$StoryCopyWith<$Res> implements $StoryCopyWith<$Res> {
       __$StoryCopyWithImpl<$Res>;
   @override
   $Res call(
-      {String storyTime,
-      String story,
-      String storyType,
-      String storyImage,
-      String? storyAdditionalImages,
-      String promoImage,
-      int orderQty,
-      String lastAddToCart,
-      int availableStock,
-      String myId,
-      String ezShopName,
-      String? companyName,
-      String? companyLogo,
-      String? companyEmail,
-      String currencyCode,
-      int unitPrice,
-      int discountAmount,
-      int discountPercent,
-      String iMyID,
-      String shopName,
-      String shopLogo,
-      String shopLink,
-      String friendlyTimeDiff,
-      String slNo});
+      {@HiveField(0) String storyTime,
+      @HiveField(1) String story,
+      @HiveField(2) String storyType,
+      @HiveField(3) String storyImage,
+      @HiveField(4) String? storyAdditionalImages,
+      @HiveField(5) String promoImage,
+      @HiveField(6) int orderQty,
+      @HiveField(7) String lastAddToCart,
+      @HiveField(8) int availableStock,
+      @HiveField(9) String myId,
+      @HiveField(10) String ezShopName,
+      @HiveField(11) String? companyName,
+      @HiveField(12) String? companyLogo,
+      @HiveField(13) String? companyEmail,
+      @HiveField(14) String currencyCode,
+      @HiveField(15) int unitPrice,
+      @HiveField(16) int discountAmount,
+      @HiveField(17) int discountPercent,
+      @HiveField(18) String iMyID,
+      @HiveField(19) String shopName,
+      @HiveField(20) String shopLogo,
+      @HiveField(21) String shopLink,
+      @HiveField(22) String friendlyTimeDiff,
+      @HiveField(23) String slNo});
 }
 
 /// @nodoc
@@ -442,80 +466,105 @@ class __$StoryCopyWithImpl<$Res> extends _$StoryCopyWithImpl<$Res>
 
 /// @nodoc
 
+@HiveType(typeId: 2, adapterName: 'StoryAdapter')
 class _$_Story implements _Story {
   const _$_Story(
-      {required this.storyTime,
-      required this.story,
-      required this.storyType,
-      required this.storyImage,
-      required this.storyAdditionalImages,
-      required this.promoImage,
-      required this.orderQty,
-      required this.lastAddToCart,
-      required this.availableStock,
-      required this.myId,
-      required this.ezShopName,
-      required this.companyName,
-      required this.companyLogo,
-      required this.companyEmail,
-      required this.currencyCode,
-      required this.unitPrice,
-      required this.discountAmount,
-      required this.discountPercent,
-      required this.iMyID,
-      required this.shopName,
-      required this.shopLogo,
-      required this.shopLink,
-      required this.friendlyTimeDiff,
-      required this.slNo});
+      {@HiveField(0) required this.storyTime,
+      @HiveField(1) required this.story,
+      @HiveField(2) required this.storyType,
+      @HiveField(3) required this.storyImage,
+      @HiveField(4) required this.storyAdditionalImages,
+      @HiveField(5) required this.promoImage,
+      @HiveField(6) required this.orderQty,
+      @HiveField(7) required this.lastAddToCart,
+      @HiveField(8) required this.availableStock,
+      @HiveField(9) required this.myId,
+      @HiveField(10) required this.ezShopName,
+      @HiveField(11) required this.companyName,
+      @HiveField(12) required this.companyLogo,
+      @HiveField(13) required this.companyEmail,
+      @HiveField(14) required this.currencyCode,
+      @HiveField(15) required this.unitPrice,
+      @HiveField(16) required this.discountAmount,
+      @HiveField(17) required this.discountPercent,
+      @HiveField(18) required this.iMyID,
+      @HiveField(19) required this.shopName,
+      @HiveField(20) required this.shopLogo,
+      @HiveField(21) required this.shopLink,
+      @HiveField(22) required this.friendlyTimeDiff,
+      @HiveField(23) required this.slNo});
 
   @override
+  @HiveField(0)
   final String storyTime;
   @override
+  @HiveField(1)
   final String story;
   @override
+  @HiveField(2)
   final String storyType;
   @override
+  @HiveField(3)
   final String storyImage;
   @override
+  @HiveField(4)
   final String? storyAdditionalImages;
   @override
+  @HiveField(5)
   final String promoImage;
   @override
+  @HiveField(6)
   final int orderQty;
   @override
+  @HiveField(7)
   final String lastAddToCart;
   @override
+  @HiveField(8)
   final int availableStock;
   @override
+  @HiveField(9)
   final String myId;
   @override
+  @HiveField(10)
   final String ezShopName;
   @override
+  @HiveField(11)
   final String? companyName;
   @override
+  @HiveField(12)
   final String? companyLogo;
   @override
+  @HiveField(13)
   final String? companyEmail;
   @override
+  @HiveField(14)
   final String currencyCode;
   @override
+  @HiveField(15)
   final int unitPrice;
   @override
+  @HiveField(16)
   final int discountAmount;
   @override
+  @HiveField(17)
   final int discountPercent;
   @override
+  @HiveField(18)
   final String iMyID;
   @override
+  @HiveField(19)
   final String shopName;
   @override
+  @HiveField(20)
   final String shopLogo;
   @override
+  @HiveField(21)
   final String shopLink;
   @override
+  @HiveField(22)
   final String friendlyTimeDiff;
   @override
+  @HiveField(23)
   final String slNo;
 
   @override
@@ -632,78 +681,102 @@ class _$_Story implements _Story {
 
 abstract class _Story implements Story {
   const factory _Story(
-      {required String storyTime,
-      required String story,
-      required String storyType,
-      required String storyImage,
-      required String? storyAdditionalImages,
-      required String promoImage,
-      required int orderQty,
-      required String lastAddToCart,
-      required int availableStock,
-      required String myId,
-      required String ezShopName,
-      required String? companyName,
-      required String? companyLogo,
-      required String? companyEmail,
-      required String currencyCode,
-      required int unitPrice,
-      required int discountAmount,
-      required int discountPercent,
-      required String iMyID,
-      required String shopName,
-      required String shopLogo,
-      required String shopLink,
-      required String friendlyTimeDiff,
-      required String slNo}) = _$_Story;
+      {@HiveField(0) required String storyTime,
+      @HiveField(1) required String story,
+      @HiveField(2) required String storyType,
+      @HiveField(3) required String storyImage,
+      @HiveField(4) required String? storyAdditionalImages,
+      @HiveField(5) required String promoImage,
+      @HiveField(6) required int orderQty,
+      @HiveField(7) required String lastAddToCart,
+      @HiveField(8) required int availableStock,
+      @HiveField(9) required String myId,
+      @HiveField(10) required String ezShopName,
+      @HiveField(11) required String? companyName,
+      @HiveField(12) required String? companyLogo,
+      @HiveField(13) required String? companyEmail,
+      @HiveField(14) required String currencyCode,
+      @HiveField(15) required int unitPrice,
+      @HiveField(16) required int discountAmount,
+      @HiveField(17) required int discountPercent,
+      @HiveField(18) required String iMyID,
+      @HiveField(19) required String shopName,
+      @HiveField(20) required String shopLogo,
+      @HiveField(21) required String shopLink,
+      @HiveField(22) required String friendlyTimeDiff,
+      @HiveField(23) required String slNo}) = _$_Story;
 
   @override
+  @HiveField(0)
   String get storyTime => throw _privateConstructorUsedError;
   @override
+  @HiveField(1)
   String get story => throw _privateConstructorUsedError;
   @override
+  @HiveField(2)
   String get storyType => throw _privateConstructorUsedError;
   @override
+  @HiveField(3)
   String get storyImage => throw _privateConstructorUsedError;
   @override
+  @HiveField(4)
   String? get storyAdditionalImages => throw _privateConstructorUsedError;
   @override
+  @HiveField(5)
   String get promoImage => throw _privateConstructorUsedError;
   @override
+  @HiveField(6)
   int get orderQty => throw _privateConstructorUsedError;
   @override
+  @HiveField(7)
   String get lastAddToCart => throw _privateConstructorUsedError;
   @override
+  @HiveField(8)
   int get availableStock => throw _privateConstructorUsedError;
   @override
+  @HiveField(9)
   String get myId => throw _privateConstructorUsedError;
   @override
+  @HiveField(10)
   String get ezShopName => throw _privateConstructorUsedError;
   @override
+  @HiveField(11)
   String? get companyName => throw _privateConstructorUsedError;
   @override
+  @HiveField(12)
   String? get companyLogo => throw _privateConstructorUsedError;
   @override
+  @HiveField(13)
   String? get companyEmail => throw _privateConstructorUsedError;
   @override
+  @HiveField(14)
   String get currencyCode => throw _privateConstructorUsedError;
   @override
+  @HiveField(15)
   int get unitPrice => throw _privateConstructorUsedError;
   @override
+  @HiveField(16)
   int get discountAmount => throw _privateConstructorUsedError;
   @override
+  @HiveField(17)
   int get discountPercent => throw _privateConstructorUsedError;
   @override
+  @HiveField(18)
   String get iMyID => throw _privateConstructorUsedError;
   @override
+  @HiveField(19)
   String get shopName => throw _privateConstructorUsedError;
   @override
+  @HiveField(20)
   String get shopLogo => throw _privateConstructorUsedError;
   @override
+  @HiveField(21)
   String get shopLink => throw _privateConstructorUsedError;
   @override
+  @HiveField(22)
   String get friendlyTimeDiff => throw _privateConstructorUsedError;
   @override
+  @HiveField(23)
   String get slNo => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)

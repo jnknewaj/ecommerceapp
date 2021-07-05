@@ -17,27 +17,27 @@ class _$SellerTearOff {
   const _$SellerTearOff();
 
   _Seller call(
-      {required String slNo,
-      required String sellerName,
-      required String sellerProfilePhoto,
-      required String sellerItemPhoto,
-      required String ezShopName,
-      required double defaultPushScore,
-      required String? aboutCompany,
-      required int allowCOD,
-      required String? division,
-      required String? subDivision,
-      required String? city,
-      required String? zipcode,
-      required String country,
-      required String currencyCode,
-      required int orderQty,
-      required int orderAmount,
-      required int salesQty,
-      required int salesAmount,
-      required int highestDiscountPercent,
-      required String lastAddToCart,
-      required String lastAddToCartThatSold}) {
+      {@HiveField(0) required String slNo,
+      @HiveField(1) required String sellerName,
+      @HiveField(2) required String sellerProfilePhoto,
+      @HiveField(3) required String sellerItemPhoto,
+      @HiveField(4) required String ezShopName,
+      @HiveField(5) required double defaultPushScore,
+      @HiveField(6) required String? aboutCompany,
+      @HiveField(7) required int allowCOD,
+      @HiveField(8) required String? division,
+      @HiveField(9) required String? subDivision,
+      @HiveField(10) required String? city,
+      @HiveField(11) required String? zipcode,
+      @HiveField(12) required String country,
+      @HiveField(13) required String currencyCode,
+      @HiveField(14) required int orderQty,
+      @HiveField(15) required int orderAmount,
+      @HiveField(16) required int salesQty,
+      @HiveField(17) required int salesAmount,
+      @HiveField(18) required int highestDiscountPercent,
+      @HiveField(19) required String lastAddToCart,
+      @HiveField(20) required String lastAddToCartThatSold}) {
     return _Seller(
       slNo: slNo,
       sellerName: sellerName,
@@ -69,27 +69,47 @@ const $Seller = _$SellerTearOff();
 
 /// @nodoc
 mixin _$Seller {
+  @HiveField(0)
   String get slNo => throw _privateConstructorUsedError;
+  @HiveField(1)
   String get sellerName => throw _privateConstructorUsedError;
+  @HiveField(2)
   String get sellerProfilePhoto => throw _privateConstructorUsedError;
+  @HiveField(3)
   String get sellerItemPhoto => throw _privateConstructorUsedError;
+  @HiveField(4)
   String get ezShopName => throw _privateConstructorUsedError;
+  @HiveField(5)
   double get defaultPushScore => throw _privateConstructorUsedError;
+  @HiveField(6)
   String? get aboutCompany => throw _privateConstructorUsedError;
+  @HiveField(7)
   int get allowCOD => throw _privateConstructorUsedError;
+  @HiveField(8)
   String? get division => throw _privateConstructorUsedError;
+  @HiveField(9)
   String? get subDivision => throw _privateConstructorUsedError;
-  String? get city =>
-      throw _privateConstructorUsedError; //required String? state,
+  @HiveField(10)
+  String? get city => throw _privateConstructorUsedError;
+  @HiveField(11)
   String? get zipcode => throw _privateConstructorUsedError;
+  @HiveField(12)
   String get country => throw _privateConstructorUsedError;
+  @HiveField(13)
   String get currencyCode => throw _privateConstructorUsedError;
+  @HiveField(14)
   int get orderQty => throw _privateConstructorUsedError;
+  @HiveField(15)
   int get orderAmount => throw _privateConstructorUsedError;
+  @HiveField(16)
   int get salesQty => throw _privateConstructorUsedError;
+  @HiveField(17)
   int get salesAmount => throw _privateConstructorUsedError;
+  @HiveField(18)
   int get highestDiscountPercent => throw _privateConstructorUsedError;
+  @HiveField(19)
   String get lastAddToCart => throw _privateConstructorUsedError;
+  @HiveField(20)
   String get lastAddToCartThatSold => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
@@ -101,27 +121,27 @@ abstract class $SellerCopyWith<$Res> {
   factory $SellerCopyWith(Seller value, $Res Function(Seller) then) =
       _$SellerCopyWithImpl<$Res>;
   $Res call(
-      {String slNo,
-      String sellerName,
-      String sellerProfilePhoto,
-      String sellerItemPhoto,
-      String ezShopName,
-      double defaultPushScore,
-      String? aboutCompany,
-      int allowCOD,
-      String? division,
-      String? subDivision,
-      String? city,
-      String? zipcode,
-      String country,
-      String currencyCode,
-      int orderQty,
-      int orderAmount,
-      int salesQty,
-      int salesAmount,
-      int highestDiscountPercent,
-      String lastAddToCart,
-      String lastAddToCartThatSold});
+      {@HiveField(0) String slNo,
+      @HiveField(1) String sellerName,
+      @HiveField(2) String sellerProfilePhoto,
+      @HiveField(3) String sellerItemPhoto,
+      @HiveField(4) String ezShopName,
+      @HiveField(5) double defaultPushScore,
+      @HiveField(6) String? aboutCompany,
+      @HiveField(7) int allowCOD,
+      @HiveField(8) String? division,
+      @HiveField(9) String? subDivision,
+      @HiveField(10) String? city,
+      @HiveField(11) String? zipcode,
+      @HiveField(12) String country,
+      @HiveField(13) String currencyCode,
+      @HiveField(14) int orderQty,
+      @HiveField(15) int orderAmount,
+      @HiveField(16) int salesQty,
+      @HiveField(17) int salesAmount,
+      @HiveField(18) int highestDiscountPercent,
+      @HiveField(19) String lastAddToCart,
+      @HiveField(20) String lastAddToCartThatSold});
 }
 
 /// @nodoc
@@ -251,27 +271,27 @@ abstract class _$SellerCopyWith<$Res> implements $SellerCopyWith<$Res> {
       __$SellerCopyWithImpl<$Res>;
   @override
   $Res call(
-      {String slNo,
-      String sellerName,
-      String sellerProfilePhoto,
-      String sellerItemPhoto,
-      String ezShopName,
-      double defaultPushScore,
-      String? aboutCompany,
-      int allowCOD,
-      String? division,
-      String? subDivision,
-      String? city,
-      String? zipcode,
-      String country,
-      String currencyCode,
-      int orderQty,
-      int orderAmount,
-      int salesQty,
-      int salesAmount,
-      int highestDiscountPercent,
-      String lastAddToCart,
-      String lastAddToCartThatSold});
+      {@HiveField(0) String slNo,
+      @HiveField(1) String sellerName,
+      @HiveField(2) String sellerProfilePhoto,
+      @HiveField(3) String sellerItemPhoto,
+      @HiveField(4) String ezShopName,
+      @HiveField(5) double defaultPushScore,
+      @HiveField(6) String? aboutCompany,
+      @HiveField(7) int allowCOD,
+      @HiveField(8) String? division,
+      @HiveField(9) String? subDivision,
+      @HiveField(10) String? city,
+      @HiveField(11) String? zipcode,
+      @HiveField(12) String country,
+      @HiveField(13) String currencyCode,
+      @HiveField(14) int orderQty,
+      @HiveField(15) int orderAmount,
+      @HiveField(16) int salesQty,
+      @HiveField(17) int salesAmount,
+      @HiveField(18) int highestDiscountPercent,
+      @HiveField(19) String lastAddToCart,
+      @HiveField(20) String lastAddToCartThatSold});
 }
 
 /// @nodoc
@@ -398,71 +418,93 @@ class __$SellerCopyWithImpl<$Res> extends _$SellerCopyWithImpl<$Res>
 
 /// @nodoc
 
+@HiveType(typeId: 1, adapterName: 'SellerAdapter')
 class _$_Seller implements _Seller {
   const _$_Seller(
-      {required this.slNo,
-      required this.sellerName,
-      required this.sellerProfilePhoto,
-      required this.sellerItemPhoto,
-      required this.ezShopName,
-      required this.defaultPushScore,
-      required this.aboutCompany,
-      required this.allowCOD,
-      required this.division,
-      required this.subDivision,
-      required this.city,
-      required this.zipcode,
-      required this.country,
-      required this.currencyCode,
-      required this.orderQty,
-      required this.orderAmount,
-      required this.salesQty,
-      required this.salesAmount,
-      required this.highestDiscountPercent,
-      required this.lastAddToCart,
-      required this.lastAddToCartThatSold});
+      {@HiveField(0) required this.slNo,
+      @HiveField(1) required this.sellerName,
+      @HiveField(2) required this.sellerProfilePhoto,
+      @HiveField(3) required this.sellerItemPhoto,
+      @HiveField(4) required this.ezShopName,
+      @HiveField(5) required this.defaultPushScore,
+      @HiveField(6) required this.aboutCompany,
+      @HiveField(7) required this.allowCOD,
+      @HiveField(8) required this.division,
+      @HiveField(9) required this.subDivision,
+      @HiveField(10) required this.city,
+      @HiveField(11) required this.zipcode,
+      @HiveField(12) required this.country,
+      @HiveField(13) required this.currencyCode,
+      @HiveField(14) required this.orderQty,
+      @HiveField(15) required this.orderAmount,
+      @HiveField(16) required this.salesQty,
+      @HiveField(17) required this.salesAmount,
+      @HiveField(18) required this.highestDiscountPercent,
+      @HiveField(19) required this.lastAddToCart,
+      @HiveField(20) required this.lastAddToCartThatSold});
 
   @override
+  @HiveField(0)
   final String slNo;
   @override
+  @HiveField(1)
   final String sellerName;
   @override
+  @HiveField(2)
   final String sellerProfilePhoto;
   @override
+  @HiveField(3)
   final String sellerItemPhoto;
   @override
+  @HiveField(4)
   final String ezShopName;
   @override
+  @HiveField(5)
   final double defaultPushScore;
   @override
+  @HiveField(6)
   final String? aboutCompany;
   @override
+  @HiveField(7)
   final int allowCOD;
   @override
+  @HiveField(8)
   final String? division;
   @override
+  @HiveField(9)
   final String? subDivision;
   @override
+  @HiveField(10)
   final String? city;
-  @override //required String? state,
+  @override
+  @HiveField(11)
   final String? zipcode;
   @override
+  @HiveField(12)
   final String country;
   @override
+  @HiveField(13)
   final String currencyCode;
   @override
+  @HiveField(14)
   final int orderQty;
   @override
+  @HiveField(15)
   final int orderAmount;
   @override
+  @HiveField(16)
   final int salesQty;
   @override
+  @HiveField(17)
   final int salesAmount;
   @override
+  @HiveField(18)
   final int highestDiscountPercent;
   @override
+  @HiveField(19)
   final String lastAddToCart;
   @override
+  @HiveField(20)
   final String lastAddToCartThatSold;
 
   @override
@@ -570,69 +612,90 @@ class _$_Seller implements _Seller {
 
 abstract class _Seller implements Seller {
   const factory _Seller(
-      {required String slNo,
-      required String sellerName,
-      required String sellerProfilePhoto,
-      required String sellerItemPhoto,
-      required String ezShopName,
-      required double defaultPushScore,
-      required String? aboutCompany,
-      required int allowCOD,
-      required String? division,
-      required String? subDivision,
-      required String? city,
-      required String? zipcode,
-      required String country,
-      required String currencyCode,
-      required int orderQty,
-      required int orderAmount,
-      required int salesQty,
-      required int salesAmount,
-      required int highestDiscountPercent,
-      required String lastAddToCart,
-      required String lastAddToCartThatSold}) = _$_Seller;
+      {@HiveField(0) required String slNo,
+      @HiveField(1) required String sellerName,
+      @HiveField(2) required String sellerProfilePhoto,
+      @HiveField(3) required String sellerItemPhoto,
+      @HiveField(4) required String ezShopName,
+      @HiveField(5) required double defaultPushScore,
+      @HiveField(6) required String? aboutCompany,
+      @HiveField(7) required int allowCOD,
+      @HiveField(8) required String? division,
+      @HiveField(9) required String? subDivision,
+      @HiveField(10) required String? city,
+      @HiveField(11) required String? zipcode,
+      @HiveField(12) required String country,
+      @HiveField(13) required String currencyCode,
+      @HiveField(14) required int orderQty,
+      @HiveField(15) required int orderAmount,
+      @HiveField(16) required int salesQty,
+      @HiveField(17) required int salesAmount,
+      @HiveField(18) required int highestDiscountPercent,
+      @HiveField(19) required String lastAddToCart,
+      @HiveField(20) required String lastAddToCartThatSold}) = _$_Seller;
 
   @override
+  @HiveField(0)
   String get slNo => throw _privateConstructorUsedError;
   @override
+  @HiveField(1)
   String get sellerName => throw _privateConstructorUsedError;
   @override
+  @HiveField(2)
   String get sellerProfilePhoto => throw _privateConstructorUsedError;
   @override
+  @HiveField(3)
   String get sellerItemPhoto => throw _privateConstructorUsedError;
   @override
+  @HiveField(4)
   String get ezShopName => throw _privateConstructorUsedError;
   @override
+  @HiveField(5)
   double get defaultPushScore => throw _privateConstructorUsedError;
   @override
+  @HiveField(6)
   String? get aboutCompany => throw _privateConstructorUsedError;
   @override
+  @HiveField(7)
   int get allowCOD => throw _privateConstructorUsedError;
   @override
+  @HiveField(8)
   String? get division => throw _privateConstructorUsedError;
   @override
+  @HiveField(9)
   String? get subDivision => throw _privateConstructorUsedError;
   @override
+  @HiveField(10)
   String? get city => throw _privateConstructorUsedError;
-  @override //required String? state,
+  @override
+  @HiveField(11)
   String? get zipcode => throw _privateConstructorUsedError;
   @override
+  @HiveField(12)
   String get country => throw _privateConstructorUsedError;
   @override
+  @HiveField(13)
   String get currencyCode => throw _privateConstructorUsedError;
   @override
+  @HiveField(14)
   int get orderQty => throw _privateConstructorUsedError;
   @override
+  @HiveField(15)
   int get orderAmount => throw _privateConstructorUsedError;
   @override
+  @HiveField(16)
   int get salesQty => throw _privateConstructorUsedError;
   @override
+  @HiveField(17)
   int get salesAmount => throw _privateConstructorUsedError;
   @override
+  @HiveField(18)
   int get highestDiscountPercent => throw _privateConstructorUsedError;
   @override
+  @HiveField(19)
   String get lastAddToCart => throw _privateConstructorUsedError;
   @override
+  @HiveField(20)
   String get lastAddToCartThatSold => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)

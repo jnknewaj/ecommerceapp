@@ -1,3 +1,4 @@
+import 'package:ecommerce_app/domain/core/errors/failures.dart';
 import 'package:flutter/material.dart';
 
 class Helper {
@@ -28,4 +29,13 @@ class Helper {
   }) {
     return (screenSize(context).width * time) - reducedBy;
   }
+}
+
+String mapFailuresToMessage(Failures failures) {
+  return failures.map(
+    serverFailure: (_) => 'Server Error',
+    networkFailure: (_) => 'No Internet Connection',
+    cacheFailure: (_) => 'No Cached Data Found',
+    unexpectedFailure: (_) => 'Unexpected Error Occurred',
+  );
 }

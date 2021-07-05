@@ -56,7 +56,7 @@ class HomePage extends StatelessWidget {
                 // 5. 2nd three items
                 NextThreeStoriesWidget(),
                 // 6. New Shops
-                SliverToBoxAdapter(child: NewShopsWidget()),
+                // SliverToBoxAdapter(child: NewShopsWidget()),
                 // 7. Rest of the items
                 RestOfTheStoriesWidget(),
               ],
