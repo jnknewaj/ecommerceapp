@@ -65,10 +65,18 @@ class TrendingProductsWidget extends StatelessWidget {
                     );
                   },
                   failedToLoad: (f) {
-                    return Text(
-                      f.failures.map(
-                        serverFailure: (_) => 'Server Error',
-                        unexpectedFailure: (_) => 'Unexpected Error',
+                    return Center(
+                      child: Text(
+                        f.failures.map(
+                          serverFailure: (_) =>
+                              mapFailuresToMessage(f.failures),
+                          networkFailure: (_) =>
+                              mapFailuresToMessage(f.failures),
+                          cacheFailure: (_) => mapFailuresToMessage(f.failures),
+                          unexpectedFailure: (_) =>
+                              mapFailuresToMessage(f.failures),
+                        ),
+                        style: const TextStyle(color: Colors.red),
                       ),
                     );
                   },

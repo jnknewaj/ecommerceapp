@@ -62,9 +62,10 @@ class NewShopsWidget extends StatelessWidget {
                   },
                   failedToLoad: (f) {
                     return Text(
-                      f.failures.map(
+                      f.failures.maybeMap(
                         serverFailure: (_) => 'Server Error',
                         unexpectedFailure: (_) => 'Unexpected Error',
+                        orElse: () => 'Unknown Error',
                       ),
                     );
                   },

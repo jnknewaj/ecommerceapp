@@ -20,6 +20,14 @@ class _$FailuresTearOff {
     return const _ServerFailure();
   }
 
+  _NetworkFailure networkFailure() {
+    return const _NetworkFailure();
+  }
+
+  _CacheFailure cacheFailure() {
+    return const _CacheFailure();
+  }
+
   _UnexpectedFailure unexpectedFailure(String msg) {
     return _UnexpectedFailure(
       msg,
@@ -35,12 +43,16 @@ mixin _$Failures {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() serverFailure,
+    required TResult Function() networkFailure,
+    required TResult Function() cacheFailure,
     required TResult Function(String msg) unexpectedFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? serverFailure,
+    TResult Function()? networkFailure,
+    TResult Function()? cacheFailure,
     TResult Function(String msg)? unexpectedFailure,
     required TResult orElse(),
   }) =>
@@ -48,12 +60,16 @@ mixin _$Failures {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_ServerFailure value) serverFailure,
+    required TResult Function(_NetworkFailure value) networkFailure,
+    required TResult Function(_CacheFailure value) cacheFailure,
     required TResult Function(_UnexpectedFailure value) unexpectedFailure,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_ServerFailure value)? serverFailure,
+    TResult Function(_NetworkFailure value)? networkFailure,
+    TResult Function(_CacheFailure value)? cacheFailure,
     TResult Function(_UnexpectedFailure value)? unexpectedFailure,
     required TResult orElse(),
   }) =>
@@ -115,6 +131,8 @@ class _$_ServerFailure implements _ServerFailure {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() serverFailure,
+    required TResult Function() networkFailure,
+    required TResult Function() cacheFailure,
     required TResult Function(String msg) unexpectedFailure,
   }) {
     return serverFailure();
@@ -124,6 +142,8 @@ class _$_ServerFailure implements _ServerFailure {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? serverFailure,
+    TResult Function()? networkFailure,
+    TResult Function()? cacheFailure,
     TResult Function(String msg)? unexpectedFailure,
     required TResult orElse(),
   }) {
@@ -137,6 +157,8 @@ class _$_ServerFailure implements _ServerFailure {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_ServerFailure value) serverFailure,
+    required TResult Function(_NetworkFailure value) networkFailure,
+    required TResult Function(_CacheFailure value) cacheFailure,
     required TResult Function(_UnexpectedFailure value) unexpectedFailure,
   }) {
     return serverFailure(this);
@@ -146,6 +168,8 @@ class _$_ServerFailure implements _ServerFailure {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_ServerFailure value)? serverFailure,
+    TResult Function(_NetworkFailure value)? networkFailure,
+    TResult Function(_CacheFailure value)? cacheFailure,
     TResult Function(_UnexpectedFailure value)? unexpectedFailure,
     required TResult orElse(),
   }) {
@@ -158,6 +182,192 @@ class _$_ServerFailure implements _ServerFailure {
 
 abstract class _ServerFailure implements Failures {
   const factory _ServerFailure() = _$_ServerFailure;
+}
+
+/// @nodoc
+abstract class _$NetworkFailureCopyWith<$Res> {
+  factory _$NetworkFailureCopyWith(
+          _NetworkFailure value, $Res Function(_NetworkFailure) then) =
+      __$NetworkFailureCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$NetworkFailureCopyWithImpl<$Res> extends _$FailuresCopyWithImpl<$Res>
+    implements _$NetworkFailureCopyWith<$Res> {
+  __$NetworkFailureCopyWithImpl(
+      _NetworkFailure _value, $Res Function(_NetworkFailure) _then)
+      : super(_value, (v) => _then(v as _NetworkFailure));
+
+  @override
+  _NetworkFailure get _value => super._value as _NetworkFailure;
+}
+
+/// @nodoc
+
+class _$_NetworkFailure implements _NetworkFailure {
+  const _$_NetworkFailure();
+
+  @override
+  String toString() {
+    return 'Failures.networkFailure()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _NetworkFailure);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() serverFailure,
+    required TResult Function() networkFailure,
+    required TResult Function() cacheFailure,
+    required TResult Function(String msg) unexpectedFailure,
+  }) {
+    return networkFailure();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? serverFailure,
+    TResult Function()? networkFailure,
+    TResult Function()? cacheFailure,
+    TResult Function(String msg)? unexpectedFailure,
+    required TResult orElse(),
+  }) {
+    if (networkFailure != null) {
+      return networkFailure();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_ServerFailure value) serverFailure,
+    required TResult Function(_NetworkFailure value) networkFailure,
+    required TResult Function(_CacheFailure value) cacheFailure,
+    required TResult Function(_UnexpectedFailure value) unexpectedFailure,
+  }) {
+    return networkFailure(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_ServerFailure value)? serverFailure,
+    TResult Function(_NetworkFailure value)? networkFailure,
+    TResult Function(_CacheFailure value)? cacheFailure,
+    TResult Function(_UnexpectedFailure value)? unexpectedFailure,
+    required TResult orElse(),
+  }) {
+    if (networkFailure != null) {
+      return networkFailure(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _NetworkFailure implements Failures {
+  const factory _NetworkFailure() = _$_NetworkFailure;
+}
+
+/// @nodoc
+abstract class _$CacheFailureCopyWith<$Res> {
+  factory _$CacheFailureCopyWith(
+          _CacheFailure value, $Res Function(_CacheFailure) then) =
+      __$CacheFailureCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$CacheFailureCopyWithImpl<$Res> extends _$FailuresCopyWithImpl<$Res>
+    implements _$CacheFailureCopyWith<$Res> {
+  __$CacheFailureCopyWithImpl(
+      _CacheFailure _value, $Res Function(_CacheFailure) _then)
+      : super(_value, (v) => _then(v as _CacheFailure));
+
+  @override
+  _CacheFailure get _value => super._value as _CacheFailure;
+}
+
+/// @nodoc
+
+class _$_CacheFailure implements _CacheFailure {
+  const _$_CacheFailure();
+
+  @override
+  String toString() {
+    return 'Failures.cacheFailure()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) || (other is _CacheFailure);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() serverFailure,
+    required TResult Function() networkFailure,
+    required TResult Function() cacheFailure,
+    required TResult Function(String msg) unexpectedFailure,
+  }) {
+    return cacheFailure();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? serverFailure,
+    TResult Function()? networkFailure,
+    TResult Function()? cacheFailure,
+    TResult Function(String msg)? unexpectedFailure,
+    required TResult orElse(),
+  }) {
+    if (cacheFailure != null) {
+      return cacheFailure();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_ServerFailure value) serverFailure,
+    required TResult Function(_NetworkFailure value) networkFailure,
+    required TResult Function(_CacheFailure value) cacheFailure,
+    required TResult Function(_UnexpectedFailure value) unexpectedFailure,
+  }) {
+    return cacheFailure(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_ServerFailure value)? serverFailure,
+    TResult Function(_NetworkFailure value)? networkFailure,
+    TResult Function(_CacheFailure value)? cacheFailure,
+    TResult Function(_UnexpectedFailure value)? unexpectedFailure,
+    required TResult orElse(),
+  }) {
+    if (cacheFailure != null) {
+      return cacheFailure(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _CacheFailure implements Failures {
+  const factory _CacheFailure() = _$_CacheFailure;
 }
 
 /// @nodoc
@@ -226,6 +436,8 @@ class _$_UnexpectedFailure implements _UnexpectedFailure {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() serverFailure,
+    required TResult Function() networkFailure,
+    required TResult Function() cacheFailure,
     required TResult Function(String msg) unexpectedFailure,
   }) {
     return unexpectedFailure(msg);
@@ -235,6 +447,8 @@ class _$_UnexpectedFailure implements _UnexpectedFailure {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? serverFailure,
+    TResult Function()? networkFailure,
+    TResult Function()? cacheFailure,
     TResult Function(String msg)? unexpectedFailure,
     required TResult orElse(),
   }) {
@@ -248,6 +462,8 @@ class _$_UnexpectedFailure implements _UnexpectedFailure {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_ServerFailure value) serverFailure,
+    required TResult Function(_NetworkFailure value) networkFailure,
+    required TResult Function(_CacheFailure value) cacheFailure,
     required TResult Function(_UnexpectedFailure value) unexpectedFailure,
   }) {
     return unexpectedFailure(this);
@@ -257,6 +473,8 @@ class _$_UnexpectedFailure implements _UnexpectedFailure {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_ServerFailure value)? serverFailure,
+    TResult Function(_NetworkFailure value)? networkFailure,
+    TResult Function(_CacheFailure value)? cacheFailure,
     TResult Function(_UnexpectedFailure value)? unexpectedFailure,
     required TResult orElse(),
   }) {

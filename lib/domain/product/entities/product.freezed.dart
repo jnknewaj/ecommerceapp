@@ -17,25 +17,25 @@ class _$ProductTearOff {
   const _$ProductTearOff();
 
   _Product call(
-      {required String slNo,
-      required String productName,
-      required String shortDetails,
-      required String productDescription,
-      required int availableStock,
-      required int orderQty,
-      required int salesQty,
-      required int orderAmount,
-      required int salesAmount,
-      required int discountPercent,
-      required int discountAmount,
-      required int unitPrice,
-      required String productImage,
-      required String sellerName,
-      required String sellerProfilePhoto,
-      required String sellerCoverPhoto,
-      required String ezShopName,
-      required int defaultPushScore,
-      required String myProductVarId}) {
+      {@HiveField(0) required String slNo,
+      @HiveField(1) required String productName,
+      @HiveField(2) required String shortDetails,
+      @HiveField(3) required String productDescription,
+      @HiveField(4) required int availableStock,
+      @HiveField(5) required int orderQty,
+      @HiveField(6) required int salesQty,
+      @HiveField(7) required int orderAmount,
+      @HiveField(8) required int salesAmount,
+      @HiveField(9) required int discountPercent,
+      @HiveField(10) required int discountAmount,
+      @HiveField(11) required int unitPrice,
+      @HiveField(12) required String productImage,
+      @HiveField(13) required String sellerName,
+      @HiveField(14) required String sellerProfilePhoto,
+      @HiveField(15) required String sellerCoverPhoto,
+      @HiveField(16) required String ezShopName,
+      @HiveField(17) required int defaultPushScore,
+      @HiveField(18) required String myProductVarId}) {
     return _Product(
       slNo: slNo,
       productName: productName,
@@ -65,24 +65,43 @@ const $Product = _$ProductTearOff();
 
 /// @nodoc
 mixin _$Product {
+  @HiveField(0)
   String get slNo => throw _privateConstructorUsedError;
+  @HiveField(1)
   String get productName => throw _privateConstructorUsedError;
+  @HiveField(2)
   String get shortDetails => throw _privateConstructorUsedError;
+  @HiveField(3)
   String get productDescription => throw _privateConstructorUsedError;
+  @HiveField(4)
   int get availableStock => throw _privateConstructorUsedError;
+  @HiveField(5)
   int get orderQty => throw _privateConstructorUsedError;
+  @HiveField(6)
   int get salesQty => throw _privateConstructorUsedError;
+  @HiveField(7)
   int get orderAmount => throw _privateConstructorUsedError;
+  @HiveField(8)
   int get salesAmount => throw _privateConstructorUsedError;
+  @HiveField(9)
   int get discountPercent => throw _privateConstructorUsedError;
+  @HiveField(10)
   int get discountAmount => throw _privateConstructorUsedError;
+  @HiveField(11)
   int get unitPrice => throw _privateConstructorUsedError;
+  @HiveField(12)
   String get productImage => throw _privateConstructorUsedError;
+  @HiveField(13)
   String get sellerName => throw _privateConstructorUsedError;
+  @HiveField(14)
   String get sellerProfilePhoto => throw _privateConstructorUsedError;
+  @HiveField(15)
   String get sellerCoverPhoto => throw _privateConstructorUsedError;
+  @HiveField(16)
   String get ezShopName => throw _privateConstructorUsedError;
+  @HiveField(17)
   int get defaultPushScore => throw _privateConstructorUsedError;
+  @HiveField(18)
   String get myProductVarId => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
@@ -94,25 +113,25 @@ abstract class $ProductCopyWith<$Res> {
   factory $ProductCopyWith(Product value, $Res Function(Product) then) =
       _$ProductCopyWithImpl<$Res>;
   $Res call(
-      {String slNo,
-      String productName,
-      String shortDetails,
-      String productDescription,
-      int availableStock,
-      int orderQty,
-      int salesQty,
-      int orderAmount,
-      int salesAmount,
-      int discountPercent,
-      int discountAmount,
-      int unitPrice,
-      String productImage,
-      String sellerName,
-      String sellerProfilePhoto,
-      String sellerCoverPhoto,
-      String ezShopName,
-      int defaultPushScore,
-      String myProductVarId});
+      {@HiveField(0) String slNo,
+      @HiveField(1) String productName,
+      @HiveField(2) String shortDetails,
+      @HiveField(3) String productDescription,
+      @HiveField(4) int availableStock,
+      @HiveField(5) int orderQty,
+      @HiveField(6) int salesQty,
+      @HiveField(7) int orderAmount,
+      @HiveField(8) int salesAmount,
+      @HiveField(9) int discountPercent,
+      @HiveField(10) int discountAmount,
+      @HiveField(11) int unitPrice,
+      @HiveField(12) String productImage,
+      @HiveField(13) String sellerName,
+      @HiveField(14) String sellerProfilePhoto,
+      @HiveField(15) String sellerCoverPhoto,
+      @HiveField(16) String ezShopName,
+      @HiveField(17) int defaultPushScore,
+      @HiveField(18) String myProductVarId});
 }
 
 /// @nodoc
@@ -232,25 +251,25 @@ abstract class _$ProductCopyWith<$Res> implements $ProductCopyWith<$Res> {
       __$ProductCopyWithImpl<$Res>;
   @override
   $Res call(
-      {String slNo,
-      String productName,
-      String shortDetails,
-      String productDescription,
-      int availableStock,
-      int orderQty,
-      int salesQty,
-      int orderAmount,
-      int salesAmount,
-      int discountPercent,
-      int discountAmount,
-      int unitPrice,
-      String productImage,
-      String sellerName,
-      String sellerProfilePhoto,
-      String sellerCoverPhoto,
-      String ezShopName,
-      int defaultPushScore,
-      String myProductVarId});
+      {@HiveField(0) String slNo,
+      @HiveField(1) String productName,
+      @HiveField(2) String shortDetails,
+      @HiveField(3) String productDescription,
+      @HiveField(4) int availableStock,
+      @HiveField(5) int orderQty,
+      @HiveField(6) int salesQty,
+      @HiveField(7) int orderAmount,
+      @HiveField(8) int salesAmount,
+      @HiveField(9) int discountPercent,
+      @HiveField(10) int discountAmount,
+      @HiveField(11) int unitPrice,
+      @HiveField(12) String productImage,
+      @HiveField(13) String sellerName,
+      @HiveField(14) String sellerProfilePhoto,
+      @HiveField(15) String sellerCoverPhoto,
+      @HiveField(16) String ezShopName,
+      @HiveField(17) int defaultPushScore,
+      @HiveField(18) String myProductVarId});
 }
 
 /// @nodoc
@@ -367,65 +386,85 @@ class __$ProductCopyWithImpl<$Res> extends _$ProductCopyWithImpl<$Res>
 
 /// @nodoc
 
+@HiveType(typeId: 0, adapterName: 'ProductAdapter')
 class _$_Product implements _Product {
   const _$_Product(
-      {required this.slNo,
-      required this.productName,
-      required this.shortDetails,
-      required this.productDescription,
-      required this.availableStock,
-      required this.orderQty,
-      required this.salesQty,
-      required this.orderAmount,
-      required this.salesAmount,
-      required this.discountPercent,
-      required this.discountAmount,
-      required this.unitPrice,
-      required this.productImage,
-      required this.sellerName,
-      required this.sellerProfilePhoto,
-      required this.sellerCoverPhoto,
-      required this.ezShopName,
-      required this.defaultPushScore,
-      required this.myProductVarId});
+      {@HiveField(0) required this.slNo,
+      @HiveField(1) required this.productName,
+      @HiveField(2) required this.shortDetails,
+      @HiveField(3) required this.productDescription,
+      @HiveField(4) required this.availableStock,
+      @HiveField(5) required this.orderQty,
+      @HiveField(6) required this.salesQty,
+      @HiveField(7) required this.orderAmount,
+      @HiveField(8) required this.salesAmount,
+      @HiveField(9) required this.discountPercent,
+      @HiveField(10) required this.discountAmount,
+      @HiveField(11) required this.unitPrice,
+      @HiveField(12) required this.productImage,
+      @HiveField(13) required this.sellerName,
+      @HiveField(14) required this.sellerProfilePhoto,
+      @HiveField(15) required this.sellerCoverPhoto,
+      @HiveField(16) required this.ezShopName,
+      @HiveField(17) required this.defaultPushScore,
+      @HiveField(18) required this.myProductVarId});
 
   @override
+  @HiveField(0)
   final String slNo;
   @override
+  @HiveField(1)
   final String productName;
   @override
+  @HiveField(2)
   final String shortDetails;
   @override
+  @HiveField(3)
   final String productDescription;
   @override
+  @HiveField(4)
   final int availableStock;
   @override
+  @HiveField(5)
   final int orderQty;
   @override
+  @HiveField(6)
   final int salesQty;
   @override
+  @HiveField(7)
   final int orderAmount;
   @override
+  @HiveField(8)
   final int salesAmount;
   @override
+  @HiveField(9)
   final int discountPercent;
   @override
+  @HiveField(10)
   final int discountAmount;
   @override
+  @HiveField(11)
   final int unitPrice;
   @override
+  @HiveField(12)
   final String productImage;
   @override
+  @HiveField(13)
   final String sellerName;
   @override
+  @HiveField(14)
   final String sellerProfilePhoto;
   @override
+  @HiveField(15)
   final String sellerCoverPhoto;
   @override
+  @HiveField(16)
   final String ezShopName;
   @override
+  @HiveField(17)
   final int defaultPushScore;
   @override
+  @HiveField(18)
   final String myProductVarId;
 
   @override
@@ -526,63 +565,82 @@ class _$_Product implements _Product {
 
 abstract class _Product implements Product {
   const factory _Product(
-      {required String slNo,
-      required String productName,
-      required String shortDetails,
-      required String productDescription,
-      required int availableStock,
-      required int orderQty,
-      required int salesQty,
-      required int orderAmount,
-      required int salesAmount,
-      required int discountPercent,
-      required int discountAmount,
-      required int unitPrice,
-      required String productImage,
-      required String sellerName,
-      required String sellerProfilePhoto,
-      required String sellerCoverPhoto,
-      required String ezShopName,
-      required int defaultPushScore,
-      required String myProductVarId}) = _$_Product;
+      {@HiveField(0) required String slNo,
+      @HiveField(1) required String productName,
+      @HiveField(2) required String shortDetails,
+      @HiveField(3) required String productDescription,
+      @HiveField(4) required int availableStock,
+      @HiveField(5) required int orderQty,
+      @HiveField(6) required int salesQty,
+      @HiveField(7) required int orderAmount,
+      @HiveField(8) required int salesAmount,
+      @HiveField(9) required int discountPercent,
+      @HiveField(10) required int discountAmount,
+      @HiveField(11) required int unitPrice,
+      @HiveField(12) required String productImage,
+      @HiveField(13) required String sellerName,
+      @HiveField(14) required String sellerProfilePhoto,
+      @HiveField(15) required String sellerCoverPhoto,
+      @HiveField(16) required String ezShopName,
+      @HiveField(17) required int defaultPushScore,
+      @HiveField(18) required String myProductVarId}) = _$_Product;
 
   @override
+  @HiveField(0)
   String get slNo => throw _privateConstructorUsedError;
   @override
+  @HiveField(1)
   String get productName => throw _privateConstructorUsedError;
   @override
+  @HiveField(2)
   String get shortDetails => throw _privateConstructorUsedError;
   @override
+  @HiveField(3)
   String get productDescription => throw _privateConstructorUsedError;
   @override
+  @HiveField(4)
   int get availableStock => throw _privateConstructorUsedError;
   @override
+  @HiveField(5)
   int get orderQty => throw _privateConstructorUsedError;
   @override
+  @HiveField(6)
   int get salesQty => throw _privateConstructorUsedError;
   @override
+  @HiveField(7)
   int get orderAmount => throw _privateConstructorUsedError;
   @override
+  @HiveField(8)
   int get salesAmount => throw _privateConstructorUsedError;
   @override
+  @HiveField(9)
   int get discountPercent => throw _privateConstructorUsedError;
   @override
+  @HiveField(10)
   int get discountAmount => throw _privateConstructorUsedError;
   @override
+  @HiveField(11)
   int get unitPrice => throw _privateConstructorUsedError;
   @override
+  @HiveField(12)
   String get productImage => throw _privateConstructorUsedError;
   @override
+  @HiveField(13)
   String get sellerName => throw _privateConstructorUsedError;
   @override
+  @HiveField(14)
   String get sellerProfilePhoto => throw _privateConstructorUsedError;
   @override
+  @HiveField(15)
   String get sellerCoverPhoto => throw _privateConstructorUsedError;
   @override
+  @HiveField(16)
   String get ezShopName => throw _privateConstructorUsedError;
   @override
+  @HiveField(17)
   int get defaultPushScore => throw _privateConstructorUsedError;
   @override
+  @HiveField(18)
   String get myProductVarId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)

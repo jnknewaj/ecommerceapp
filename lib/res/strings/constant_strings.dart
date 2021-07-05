@@ -1,0 +1,1 @@
+const String noNetwork = 'No Internet Connection';
