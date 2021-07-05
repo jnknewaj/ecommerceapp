@@ -1,6 +1,7 @@
 import 'package:ecommerce_app/domain/core/errors/exceptions.dart';
 import 'package:ecommerce_app/domain/shop/entities/shop.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:injectable/injectable.dart';
 
 const String boxShops = 'boxShops';
 const String keyNewShops = 'keyNewShops';
@@ -12,6 +13,7 @@ abstract class IShopLocalDataSource {
   List<Shop> fetchCachedNewShops();
 }
 
+@LazySingleton(as: IShopLocalDataSource)
 class ShopLocalDataSource implements IShopLocalDataSource {
   @override
   Future<void> cacheNewShops(List<Shop> shops) async {
