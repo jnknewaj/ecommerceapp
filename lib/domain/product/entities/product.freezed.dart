@@ -34,7 +34,6 @@ class _$ProductTearOff {
       @HiveField(14) required String sellerProfilePhoto,
       @HiveField(15) required String sellerCoverPhoto,
       @HiveField(16) required String ezShopName,
-      @HiveField(17) required int defaultPushScore,
       @HiveField(18) required String myProductVarId}) {
     return _Product(
       slNo: slNo,
@@ -54,7 +53,6 @@ class _$ProductTearOff {
       sellerProfilePhoto: sellerProfilePhoto,
       sellerCoverPhoto: sellerCoverPhoto,
       ezShopName: ezShopName,
-      defaultPushScore: defaultPushScore,
       myProductVarId: myProductVarId,
     );
   }
@@ -98,9 +96,8 @@ mixin _$Product {
   @HiveField(15)
   String get sellerCoverPhoto => throw _privateConstructorUsedError;
   @HiveField(16)
-  String get ezShopName => throw _privateConstructorUsedError;
-  @HiveField(17)
-  int get defaultPushScore => throw _privateConstructorUsedError;
+  String get ezShopName =>
+      throw _privateConstructorUsedError; //@HiveField(17) required int defaultPushScore,
   @HiveField(18)
   String get myProductVarId => throw _privateConstructorUsedError;
 
@@ -130,7 +127,6 @@ abstract class $ProductCopyWith<$Res> {
       @HiveField(14) String sellerProfilePhoto,
       @HiveField(15) String sellerCoverPhoto,
       @HiveField(16) String ezShopName,
-      @HiveField(17) int defaultPushScore,
       @HiveField(18) String myProductVarId});
 }
 
@@ -161,7 +157,6 @@ class _$ProductCopyWithImpl<$Res> implements $ProductCopyWith<$Res> {
     Object? sellerProfilePhoto = freezed,
     Object? sellerCoverPhoto = freezed,
     Object? ezShopName = freezed,
-    Object? defaultPushScore = freezed,
     Object? myProductVarId = freezed,
   }) {
     return _then(_value.copyWith(
@@ -233,10 +228,6 @@ class _$ProductCopyWithImpl<$Res> implements $ProductCopyWith<$Res> {
           ? _value.ezShopName
           : ezShopName // ignore: cast_nullable_to_non_nullable
               as String,
-      defaultPushScore: defaultPushScore == freezed
-          ? _value.defaultPushScore
-          : defaultPushScore // ignore: cast_nullable_to_non_nullable
-              as int,
       myProductVarId: myProductVarId == freezed
           ? _value.myProductVarId
           : myProductVarId // ignore: cast_nullable_to_non_nullable
@@ -268,7 +259,6 @@ abstract class _$ProductCopyWith<$Res> implements $ProductCopyWith<$Res> {
       @HiveField(14) String sellerProfilePhoto,
       @HiveField(15) String sellerCoverPhoto,
       @HiveField(16) String ezShopName,
-      @HiveField(17) int defaultPushScore,
       @HiveField(18) String myProductVarId});
 }
 
@@ -300,7 +290,6 @@ class __$ProductCopyWithImpl<$Res> extends _$ProductCopyWithImpl<$Res>
     Object? sellerProfilePhoto = freezed,
     Object? sellerCoverPhoto = freezed,
     Object? ezShopName = freezed,
-    Object? defaultPushScore = freezed,
     Object? myProductVarId = freezed,
   }) {
     return _then(_Product(
@@ -372,10 +361,6 @@ class __$ProductCopyWithImpl<$Res> extends _$ProductCopyWithImpl<$Res>
           ? _value.ezShopName
           : ezShopName // ignore: cast_nullable_to_non_nullable
               as String,
-      defaultPushScore: defaultPushScore == freezed
-          ? _value.defaultPushScore
-          : defaultPushScore // ignore: cast_nullable_to_non_nullable
-              as int,
       myProductVarId: myProductVarId == freezed
           ? _value.myProductVarId
           : myProductVarId // ignore: cast_nullable_to_non_nullable
@@ -406,7 +391,6 @@ class _$_Product implements _Product {
       @HiveField(14) required this.sellerProfilePhoto,
       @HiveField(15) required this.sellerCoverPhoto,
       @HiveField(16) required this.ezShopName,
-      @HiveField(17) required this.defaultPushScore,
       @HiveField(18) required this.myProductVarId});
 
   @override
@@ -460,16 +444,13 @@ class _$_Product implements _Product {
   @override
   @HiveField(16)
   final String ezShopName;
-  @override
-  @HiveField(17)
-  final int defaultPushScore;
-  @override
+  @override //@HiveField(17) required int defaultPushScore,
   @HiveField(18)
   final String myProductVarId;
 
   @override
   String toString() {
-    return 'Product(slNo: $slNo, productName: $productName, shortDetails: $shortDetails, productDescription: $productDescription, availableStock: $availableStock, orderQty: $orderQty, salesQty: $salesQty, orderAmount: $orderAmount, salesAmount: $salesAmount, discountPercent: $discountPercent, discountAmount: $discountAmount, unitPrice: $unitPrice, productImage: $productImage, sellerName: $sellerName, sellerProfilePhoto: $sellerProfilePhoto, sellerCoverPhoto: $sellerCoverPhoto, ezShopName: $ezShopName, defaultPushScore: $defaultPushScore, myProductVarId: $myProductVarId)';
+    return 'Product(slNo: $slNo, productName: $productName, shortDetails: $shortDetails, productDescription: $productDescription, availableStock: $availableStock, orderQty: $orderQty, salesQty: $salesQty, orderAmount: $orderAmount, salesAmount: $salesAmount, discountPercent: $discountPercent, discountAmount: $discountAmount, unitPrice: $unitPrice, productImage: $productImage, sellerName: $sellerName, sellerProfilePhoto: $sellerProfilePhoto, sellerCoverPhoto: $sellerCoverPhoto, ezShopName: $ezShopName, myProductVarId: $myProductVarId)';
   }
 
   @override
@@ -526,9 +507,6 @@ class _$_Product implements _Product {
             (identical(other.ezShopName, ezShopName) ||
                 const DeepCollectionEquality()
                     .equals(other.ezShopName, ezShopName)) &&
-            (identical(other.defaultPushScore, defaultPushScore) ||
-                const DeepCollectionEquality()
-                    .equals(other.defaultPushScore, defaultPushScore)) &&
             (identical(other.myProductVarId, myProductVarId) ||
                 const DeepCollectionEquality()
                     .equals(other.myProductVarId, myProductVarId)));
@@ -554,7 +532,6 @@ class _$_Product implements _Product {
       const DeepCollectionEquality().hash(sellerProfilePhoto) ^
       const DeepCollectionEquality().hash(sellerCoverPhoto) ^
       const DeepCollectionEquality().hash(ezShopName) ^
-      const DeepCollectionEquality().hash(defaultPushScore) ^
       const DeepCollectionEquality().hash(myProductVarId);
 
   @JsonKey(ignore: true)
@@ -582,7 +559,6 @@ abstract class _Product implements Product {
       @HiveField(14) required String sellerProfilePhoto,
       @HiveField(15) required String sellerCoverPhoto,
       @HiveField(16) required String ezShopName,
-      @HiveField(17) required int defaultPushScore,
       @HiveField(18) required String myProductVarId}) = _$_Product;
 
   @override
@@ -636,10 +612,7 @@ abstract class _Product implements Product {
   @override
   @HiveField(16)
   String get ezShopName => throw _privateConstructorUsedError;
-  @override
-  @HiveField(17)
-  int get defaultPushScore => throw _privateConstructorUsedError;
-  @override
+  @override //@HiveField(17) required int defaultPushScore,
   @HiveField(18)
   String get myProductVarId => throw _privateConstructorUsedError;
   @override

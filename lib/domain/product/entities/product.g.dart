@@ -34,7 +34,6 @@ class ProductAdapter extends TypeAdapter<_$_Product> {
       sellerProfilePhoto: fields[14] as String,
       sellerCoverPhoto: fields[15] as String,
       ezShopName: fields[16] as String,
-      defaultPushScore: fields[17] as int,
       myProductVarId: fields[18] as String,
     );
   }
@@ -42,7 +41,7 @@ class ProductAdapter extends TypeAdapter<_$_Product> {
   @override
   void write(BinaryWriter writer, _$_Product obj) {
     writer
-      ..writeByte(19)
+      ..writeByte(18)
       ..writeByte(0)
       ..write(obj.slNo)
       ..writeByte(1)
@@ -77,8 +76,6 @@ class ProductAdapter extends TypeAdapter<_$_Product> {
       ..write(obj.sellerCoverPhoto)
       ..writeByte(16)
       ..write(obj.ezShopName)
-      ..writeByte(17)
-      ..write(obj.defaultPushScore)
       ..writeByte(18)
       ..write(obj.myProductVarId);
   }

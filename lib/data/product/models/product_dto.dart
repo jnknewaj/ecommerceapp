@@ -26,7 +26,7 @@ abstract class ProductDto implements _$ProductDto {
     required String sellerProfilePhoto,
     required String sellerCoverPhoto,
     required String ezShopName,
-    required int defaultPushScore,
+    //required int defaultPushScore,
     required String myProductVarId,
   }) = _ProductDto;
 
@@ -49,7 +49,7 @@ abstract class ProductDto implements _$ProductDto {
       sellerProfilePhoto: product.sellerProfilePhoto,
       sellerCoverPhoto: product.sellerCoverPhoto,
       ezShopName: product.ezShopName,
-      defaultPushScore: product.defaultPushScore,
+      //defaultPushScore: product.defaultPushScore,
       myProductVarId: product.myProductVarId,
     );
   }
@@ -73,7 +73,7 @@ abstract class ProductDto implements _$ProductDto {
       sellerProfilePhoto: sellerProfilePhoto,
       sellerCoverPhoto: sellerCoverPhoto,
       ezShopName: ezShopName,
-      defaultPushScore: defaultPushScore,
+      //defaultPushScore: defaultPushScore,
       myProductVarId: myProductVarId,
     );
   }

@@ -25,7 +25,6 @@ _$_ProductDto _$_$_ProductDtoFromJson(Map<String, dynamic> json) {
     sellerProfilePhoto: json['sellerProfilePhoto'] as String,
     sellerCoverPhoto: json['sellerCoverPhoto'] as String,
     ezShopName: json['ezShopName'] as String,
-    defaultPushScore: json['defaultPushScore'] as int,
     myProductVarId: json['myProductVarId'] as String,
   );
 }
@@ -49,6 +48,5 @@ Map<String, dynamic> _$_$_ProductDtoToJson(_$_ProductDto instance) =>
       'sellerProfilePhoto': instance.sellerProfilePhoto,
       'sellerCoverPhoto': instance.sellerCoverPhoto,
       'ezShopName': instance.ezShopName,
-      'defaultPushScore': instance.defaultPushScore,
       'myProductVarId': instance.myProductVarId,
     };

@@ -38,7 +38,6 @@ class _$ProductDtoTearOff {
       required String sellerProfilePhoto,
       required String sellerCoverPhoto,
       required String ezShopName,
-      required int defaultPushScore,
       required String myProductVarId}) {
     return _ProductDto(
       slNo: slNo,
@@ -58,7 +57,6 @@ class _$ProductDtoTearOff {
       sellerProfilePhoto: sellerProfilePhoto,
       sellerCoverPhoto: sellerCoverPhoto,
       ezShopName: ezShopName,
-      defaultPushScore: defaultPushScore,
       myProductVarId: myProductVarId,
     );
   }
@@ -89,8 +87,8 @@ mixin _$ProductDto {
   String get sellerName => throw _privateConstructorUsedError;
   String get sellerProfilePhoto => throw _privateConstructorUsedError;
   String get sellerCoverPhoto => throw _privateConstructorUsedError;
-  String get ezShopName => throw _privateConstructorUsedError;
-  int get defaultPushScore => throw _privateConstructorUsedError;
+  String get ezShopName =>
+      throw _privateConstructorUsedError; //required int defaultPushScore,
   String get myProductVarId => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -122,7 +120,6 @@ abstract class $ProductDtoCopyWith<$Res> {
       String sellerProfilePhoto,
       String sellerCoverPhoto,
       String ezShopName,
-      int defaultPushScore,
       String myProductVarId});
 }
 
@@ -153,7 +150,6 @@ class _$ProductDtoCopyWithImpl<$Res> implements $ProductDtoCopyWith<$Res> {
     Object? sellerProfilePhoto = freezed,
     Object? sellerCoverPhoto = freezed,
     Object? ezShopName = freezed,
-    Object? defaultPushScore = freezed,
     Object? myProductVarId = freezed,
   }) {
     return _then(_value.copyWith(
@@ -225,10 +221,6 @@ class _$ProductDtoCopyWithImpl<$Res> implements $ProductDtoCopyWith<$Res> {
           ? _value.ezShopName
           : ezShopName // ignore: cast_nullable_to_non_nullable
               as String,
-      defaultPushScore: defaultPushScore == freezed
-          ? _value.defaultPushScore
-          : defaultPushScore // ignore: cast_nullable_to_non_nullable
-              as int,
       myProductVarId: myProductVarId == freezed
           ? _value.myProductVarId
           : myProductVarId // ignore: cast_nullable_to_non_nullable
@@ -261,7 +253,6 @@ abstract class _$ProductDtoCopyWith<$Res> implements $ProductDtoCopyWith<$Res> {
       String sellerProfilePhoto,
       String sellerCoverPhoto,
       String ezShopName,
-      int defaultPushScore,
       String myProductVarId});
 }
 
@@ -294,7 +285,6 @@ class __$ProductDtoCopyWithImpl<$Res> extends _$ProductDtoCopyWithImpl<$Res>
     Object? sellerProfilePhoto = freezed,
     Object? sellerCoverPhoto = freezed,
     Object? ezShopName = freezed,
-    Object? defaultPushScore = freezed,
     Object? myProductVarId = freezed,
   }) {
     return _then(_ProductDto(
@@ -366,10 +356,6 @@ class __$ProductDtoCopyWithImpl<$Res> extends _$ProductDtoCopyWithImpl<$Res>
           ? _value.ezShopName
           : ezShopName // ignore: cast_nullable_to_non_nullable
               as String,
-      defaultPushScore: defaultPushScore == freezed
-          ? _value.defaultPushScore
-          : defaultPushScore // ignore: cast_nullable_to_non_nullable
-              as int,
       myProductVarId: myProductVarId == freezed
           ? _value.myProductVarId
           : myProductVarId // ignore: cast_nullable_to_non_nullable
@@ -399,7 +385,6 @@ class _$_ProductDto extends _ProductDto {
       required this.sellerProfilePhoto,
       required this.sellerCoverPhoto,
       required this.ezShopName,
-      required this.defaultPushScore,
       required this.myProductVarId})
       : super._();
 
@@ -440,14 +425,12 @@ class _$_ProductDto extends _ProductDto {
   final String sellerCoverPhoto;
   @override
   final String ezShopName;
-  @override
-  final int defaultPushScore;
-  @override
+  @override //required int defaultPushScore,
   final String myProductVarId;
 
   @override
   String toString() {
-    return 'ProductDto(slNo: $slNo, productName: $productName, shortDetails: $shortDetails, productDescription: $productDescription, availableStock: $availableStock, orderQty: $orderQty, salesQty: $salesQty, orderAmount: $orderAmount, salesAmount: $salesAmount, discountPercent: $discountPercent, discountAmount: $discountAmount, unitPrice: $unitPrice, productImage: $productImage, sellerName: $sellerName, sellerProfilePhoto: $sellerProfilePhoto, sellerCoverPhoto: $sellerCoverPhoto, ezShopName: $ezShopName, defaultPushScore: $defaultPushScore, myProductVarId: $myProductVarId)';
+    return 'ProductDto(slNo: $slNo, productName: $productName, shortDetails: $shortDetails, productDescription: $productDescription, availableStock: $availableStock, orderQty: $orderQty, salesQty: $salesQty, orderAmount: $orderAmount, salesAmount: $salesAmount, discountPercent: $discountPercent, discountAmount: $discountAmount, unitPrice: $unitPrice, productImage: $productImage, sellerName: $sellerName, sellerProfilePhoto: $sellerProfilePhoto, sellerCoverPhoto: $sellerCoverPhoto, ezShopName: $ezShopName, myProductVarId: $myProductVarId)';
   }
 
   @override
@@ -504,9 +487,6 @@ class _$_ProductDto extends _ProductDto {
             (identical(other.ezShopName, ezShopName) ||
                 const DeepCollectionEquality()
                     .equals(other.ezShopName, ezShopName)) &&
-            (identical(other.defaultPushScore, defaultPushScore) ||
-                const DeepCollectionEquality()
-                    .equals(other.defaultPushScore, defaultPushScore)) &&
             (identical(other.myProductVarId, myProductVarId) ||
                 const DeepCollectionEquality()
                     .equals(other.myProductVarId, myProductVarId)));
@@ -532,7 +512,6 @@ class _$_ProductDto extends _ProductDto {
       const DeepCollectionEquality().hash(sellerProfilePhoto) ^
       const DeepCollectionEquality().hash(sellerCoverPhoto) ^
       const DeepCollectionEquality().hash(ezShopName) ^
-      const DeepCollectionEquality().hash(defaultPushScore) ^
       const DeepCollectionEquality().hash(myProductVarId);
 
   @JsonKey(ignore: true)
@@ -565,7 +544,6 @@ abstract class _ProductDto extends ProductDto {
       required String sellerProfilePhoto,
       required String sellerCoverPhoto,
       required String ezShopName,
-      required int defaultPushScore,
       required String myProductVarId}) = _$_ProductDto;
   const _ProductDto._() : super._();
 
@@ -606,9 +584,7 @@ abstract class _ProductDto extends ProductDto {
   String get sellerCoverPhoto => throw _privateConstructorUsedError;
   @override
   String get ezShopName => throw _privateConstructorUsedError;
-  @override
-  int get defaultPushScore => throw _privateConstructorUsedError;
-  @override
+  @override //required int defaultPushScore,
   String get myProductVarId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)

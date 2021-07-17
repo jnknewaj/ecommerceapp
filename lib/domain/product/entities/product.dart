@@ -25,7 +25,7 @@ abstract class Product with _$Product {
     @HiveField(14) required String sellerProfilePhoto,
     @HiveField(15) required String sellerCoverPhoto,
     @HiveField(16) required String ezShopName,
-    @HiveField(17) required int defaultPushScore,
+    //@HiveField(17) required int defaultPushScore,
     @HiveField(18) required String myProductVarId,
   }) = _Product;
 }
